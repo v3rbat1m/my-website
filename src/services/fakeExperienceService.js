@@ -12,11 +12,10 @@ const experience = [
     text: `Nothing special, moving boxes from one place to another.`,
   },
   {
-    position: "Work on the farm",
-    company: "UK Boston farmers :D",
+    position: "Farmer",
+    company: "United Kingdom, Boston farmers",
     workDuration: "May 2018 - Feb 2018",
-    text: `Worked for farmers in United Kingdom, picked flowers, planted beetroots.
-    Went there to get experience in another country and for money.`,
+    text: `Picking flowers, planting beetroots.`,
   },
   {
     position: "Mechanism operator",
