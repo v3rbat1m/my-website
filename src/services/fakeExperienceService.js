@@ -29,7 +29,7 @@ const experience = [
     company: "Individual activity",
     workDuration: "Jan 2019 - May 2019",
     text: `Started to work as passenger carrier because of flexible work hours
-    (easier to coordiante with studies). Quit because I got a better proposal.`,
+    (easier to coordiante with studies).`,
   },
   {
     position: "Cnc machine programmer",
@@ -37,15 +37,13 @@ const experience = [
     workDuration: "June 2019 - May 2020",
     text: `I wrote programs for cnc machines, so operators could make wooden details faster.
     Learned a lot there, started programming in JS in this company, 
-    because I wanted and I did wrote a postprocessor to convert Inventor CAM to G code.
-    Quit because of COVID-19 pandeminc, there is hard time for this company, could get recommendation.`,
+    because I wanted and I did wrote a postprocessor to convert Inventor CAM to G code.`,
   },
   {
     position: "Production master",
     company: 'UAB "LogoEra"',
     workDuration: "June 2020 - July 2020",
-    text: `Responsible for production. Quit because of lack perspectives and I want to work in a company
-    which allows my brain to work and gives some challenges`,
+    text: `Responsible for production.`,
   },
   {
     position: "Beekeeper",
