@@ -1,0 +1,39 @@
+@import "../variables.scss";
+
+.about {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+
+    .section-item-header {
+      font-family: "Lucida Console", Courier, monospace;
+    }
+
+    .cv {
+      .content {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        p {
+          grid-column-start: 1;
+          grid-column-end: 3;
+        }
+      }
+
+      .btn {
+        align-self: end;
+      }
+    }
+
+    .interests {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      .icons {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}

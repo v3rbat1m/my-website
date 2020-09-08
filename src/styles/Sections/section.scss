@@ -1,0 +1,31 @@
+@import '../variables.scss';
+
+.section {
+  width: 100%;
+
+  background-color: $sectionColor;
+
+  h2 {
+    font-family: "Lucida Console", Courier, monospace;
+    text-align: left;
+  }
+
+  .section-content {
+    padding: 30px;
+  }
+}
+
+.section-dark {
+  background-color: $darkSectionColor;
+}
+
+
+.section-home {
+    background: url('../../photos/background.jpg') no-repeat center center fixed;
+    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+  }
