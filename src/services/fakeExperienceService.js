@@ -43,7 +43,7 @@ const experience = [
     position: "Production master",
     company: 'UAB "LogoEra"',
     workDuration: "June 2020 - July 2020",
-    text: `Responsible for production.`,
+    text: `Responsible for production!!!`,
   },
   {
     position: "Beekeeper",
