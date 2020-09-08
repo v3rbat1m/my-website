@@ -13,7 +13,7 @@ const experience = [
   },
   {
     position: "Work on the farm",
-    company: 'UK Boston farmers :D',
+    company: "UK Boston farmers :D",
     workDuration: "May 2018 - Feb 2018",
     text: `Worked for farmers in United Kingdom, picked flowers, planted beetroots.
     Went there to get experience in another country and for money.`,
@@ -45,8 +45,14 @@ const experience = [
     position: "Production master",
     company: 'UAB "LogoEra"',
     workDuration: "June 2020 - July 2020",
-     text: `Responsible for production. Quit because of lack perspectives and I want to work in a company
+    text: `Responsible for production. Quit because of lack perspectives and I want to work in a company
     which allows my brain to work and gives some challenges`,
+  },
+  {
+    position: "Beekeeper",
+    company: "Individual activity",
+    workDuration: "May 2003 - Present",
+    text: `Family business for about ~60 years.`,
   },
 ];
 
