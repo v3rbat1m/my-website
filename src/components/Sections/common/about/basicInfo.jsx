@@ -3,7 +3,7 @@ import React from "react";
 const BasicInfo = () => {
   return (
     <div className="basic-info">
-      <h3 className="section-item-header">Basic Information</h3>
+      <h3 className="section-item-header">Basic information</h3>
         <table className="table">
           <tbody>
             <tr>

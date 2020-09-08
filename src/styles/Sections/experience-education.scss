@@ -94,6 +94,10 @@
 
 .education {
   @include bubble("dark");
+
+  .section-header {
+    color: white;
+  }
 }
 
 .section-experience {

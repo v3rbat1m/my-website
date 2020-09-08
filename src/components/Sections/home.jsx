@@ -5,7 +5,6 @@ const Home = () => {
   return (
     <div className="home">
       <h1>I'm Karolis Šarskus</h1>
-      {/* <p> */}
       Junior{" "}
       <Typical
         className="typical"
@@ -20,7 +19,6 @@ const Home = () => {
         loop={Infinity}
         wrapper="b"
       />
-      {/* </p> */}
     </div>
   );
 };

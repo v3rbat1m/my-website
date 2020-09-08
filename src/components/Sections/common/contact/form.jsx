@@ -5,19 +5,25 @@ const MyForm = () => {
   return (
     <Form>
       <Form.Group controlId="Name">
-        <Form.Label>Name</Form.Label>
-        <Form.Control placeholder="Enter your or company name" />
+        <Form.Label className='section-item-header'>Name</Form.Label>
+        <Form.Control placeholder="Enter your or company name" disabled />
       </Form.Group>
 
       <Form.Group controlId="formGroupEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
+        <Form.Label className='section-item-header'>Email address</Form.Label>
+        <Form.Control type="email" placeholder="Enter email" disabled />
       </Form.Group>
       <Form.Group controlId="exampleForm.ControlTextarea1">
-        <Form.Label>Example textarea</Form.Label>
-        <Form.Control as="textarea" rows="5" />
+        <Form.Label className='section-item-header'>Message</Form.Label>
+        <Form.Control as="textarea" rows="5" disabled />
       </Form.Group>
-      <Button variant="dark" type="submit">
+      <Button
+        variant="dark"
+        type="submit"
+        onClick={() => {
+          alert("Sorry, not implemented yet.");
+        }}
+      >
         Submit
       </Button>
     </Form>
