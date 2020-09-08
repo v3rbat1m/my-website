@@ -9,7 +9,7 @@ const experience = [
     position: "Parcel distribution operator",
     company: 'UAB "VENIPAK"',
     workDuration: "Sep 2017 - Jan 2017",
-    text: `Nothing special, moving boxes from one place to another.`,
+    text: `Responsible for parcels location in warehouse.`,
   },
   {
     position: "Farmer",
@@ -21,8 +21,7 @@ const experience = [
     position: "Mechanism operator",
     company: 'AB "Vilniaus baldai"',
     workDuration: "June 2018 - Dec 2018",
-    text: `I was responsible for packaging. Had to coordinate 4-5 people team.
-    Quit because for lack of perspectives`,
+    text: `I was responsible for packaging. Had to coordinate 4-5 people team.`,
   },
   {
     position: "Passenger carrier (taxi driver)",
@@ -37,13 +36,13 @@ const experience = [
     workDuration: "June 2019 - May 2020",
     text: `I wrote programs for cnc machines, so operators could make wooden details faster.
     Learned a lot there, started programming in JS in this company, 
-    because I wanted and I did wrote a postprocessor to convert Inventor CAM to G code.`,
+    because I wanted/needed to write a postprocessor code to convert Inventor CAM to G code.`,
   },
   {
     position: "Production master",
     company: 'UAB "LogoEra"',
     workDuration: "June 2020 - July 2020",
-    text: `Responsible for production!!!`,
+    text: `Responsible for production.`,
   },
   {
     position: "Beekeeper",
