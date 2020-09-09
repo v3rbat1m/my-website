@@ -5,6 +5,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
+    .form-group {
+      width: 100%;
+      min-width: 320px;
+      max-width: 100%;
+    }
+
     @include phone {
       grid-template-columns: 1fr;
       width: 100%;
