@@ -7,11 +7,12 @@
 
     @include phone {
       grid-template-columns: 1fr;
-      max-width: 300px;
-      // width: 95vw;
+      width: 100%;
+      min-width: 320px;
+      max-width: 100%;
     }
 
-    grid-gap: 1em;
+    grid-gap: 2em;
   }
 
   .info {
