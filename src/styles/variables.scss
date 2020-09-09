@@ -2,3 +2,21 @@ $sidebarWidth: 250px;
 
 $sectionColor: black;
 $darkSectionColor: white;
+
+$phone-width: 500px;
+
+
+// $tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin phone {
+  @media (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

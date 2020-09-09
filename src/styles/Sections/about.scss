@@ -1,22 +1,32 @@
 @import "../variables.scss";
 
 .about {
-  .content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1em;
-    
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+
+    .cv,
+    .basic-info,
+    .interests {
+      flex-grow: 1;
+      min-width: 50%;
+      
+      @include phone {
+        min-width: 100%;
+      }
+    }
+
     .section-item-header {
       font-family: "Lucida Console", Courier, monospace;
     }
-    
+
     .cv {
       .cv-content {
         height: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 1em;
-        
+
         p {
           grid-column-start: 1;
           grid-column-end: 3;
@@ -29,8 +39,6 @@
     }
 
     .interests {
-      grid-column-start: 1;
-      grid-column-end: 3;
       .icons {
         display: flex;
         justify-content: space-between;

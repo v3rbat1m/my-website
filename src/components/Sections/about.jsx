@@ -10,7 +10,7 @@ const AboutMe = () => {
   return (
     <div className="about">
       <h2 className="section-header">About me!</h2>
-      <div className="content">
+      <div className="about-content">
         {simplifyInView(<BasicInfo />, "left", "basic-info")}
         {simplifyInView(<CV text={cvText} />, "right", "cv")}
         {simplifyInView(<Interests />, "bottom", "interests")}
