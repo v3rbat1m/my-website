@@ -29,7 +29,7 @@ export function fadeInStyle(inView, side) {
 }
 
 export const inViewProperties = {
-  threshold: 0.75,
+  threshold: 0,
   rootMargin: "0px 0px -50px 0px",
   triggerOnce: true,
 };

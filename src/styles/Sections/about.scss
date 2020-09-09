@@ -9,7 +9,7 @@
     .basic-info,
     .interests {
       flex-grow: 1;
-      min-width: 50%;
+      max-width: 50%;
       
       @include phone {
         min-width: 100%;

@@ -7,8 +7,9 @@
 
     @include phone {
       grid-template-columns: 1fr;
+      max-width: 350px;
     }
-    
+
     grid-gap: 1em;
   }
 
