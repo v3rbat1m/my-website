@@ -5,11 +5,18 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    .form-group {
+    .form {
       width: 100%;
-      min-width: 320px;
-      max-width: 100%;
+      float: left;
+      .form-group {
+        width: 90%;
+      }
     }
+
+    // .form-group {
+    // width: 85%;
+    // max-width: auto;
+    // }
 
     @include phone {
       grid-template-columns: 1fr;
