@@ -1,9 +1,0 @@
-@import "../variables.scss";
-
-$heigt: minmax(70vh, auto);
-
-.Sections {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: $heigt;
-}

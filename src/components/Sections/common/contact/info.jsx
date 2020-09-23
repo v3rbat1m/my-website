@@ -3,7 +3,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneSquareAlt } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faAutoprefixer, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
@@ -19,20 +19,20 @@ const Info = () => {
   return (
     <div>
       <div className="address">
-        <h3  className='section-item-header'>Address</h3>
+        <h3 className="section-item-header">Address</h3>
         <div className="content">
           <p>Lietuva, Vilnius, Pavilnio sodų 6-oji g. 10</p>
         </div>
       </div>
       <div className="contacts">
-        <h3  className='section-item-header'>Contacts</h3>
+        <h3 className="section-item-header">Contacts</h3>
         <div className="content">
           <p>{emailIcon} k.krivicius@gmail.com</p>
           <p>{phoneIcon} + 370 609 07 803</p>
         </div>
       </div>
       <div className="social">
-        <h3  className='section-item-header'>Social</h3>
+        <h3 className="section-item-header">Social</h3>
         <div className="content">
           <a href="https://www.facebook.com/karolis.sarskus/">{facebookIcon}</a>
           <a href="https://github.com/v3rbat1m">{githubIcon}</a>

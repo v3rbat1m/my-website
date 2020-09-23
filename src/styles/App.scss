@@ -2,7 +2,6 @@
 
 @import "./variables.scss";
 @import "./navbar.scss";
-@import "./Sections/allSections.scss";
 @import "./Sections/section.scss";
 @import "./Sections/home.scss";
 @import "./Sections/about.scss";
@@ -12,8 +11,9 @@
 
 .App {
   overflow-x: hidden;
-  // flex-direction: row;
-  // height: 100vh;
-  // flex-grow: 1;
-  // margin: 0;
+
+  .all-sections {
+    display: flex;
+    flex-direction: column;
+  }
 }

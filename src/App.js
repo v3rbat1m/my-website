@@ -1,4 +1,3 @@
-
 import React from "react";
 import Navbar from "./components/Navbar";
 import Section from "./components/Section";
@@ -8,6 +7,7 @@ import Skills from "./components/Sections/skills";
 import Experience from "./components/Sections/experience";
 import Education from "./components/Sections/education";
 import Contact from "./components/Sections/contact";
+import Example from "./components/Sections/test";
 
 const items = [
   { name: "home", label: "Home", dark: false, content: Home },
@@ -18,12 +18,11 @@ const items = [
   { name: "contact", label: "Contact", dark: true, content: Contact },
 ];
 
-
 const App = () => {
   return (
     <div className="App">
       <Navbar items={items} />
-      <div className="Sections">
+      <div className="all-sections">
         {items.map((item) => (
           <Section
             title={item.label}
@@ -33,6 +32,7 @@ const App = () => {
             content={<item.content />}
           />
         ))}
+        {/* <Example /> */}
       </div>
     </div>
   );

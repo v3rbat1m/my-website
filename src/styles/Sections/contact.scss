@@ -2,33 +2,20 @@
 
 .contact {
   .contact-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: row;
 
     .form {
-      width: 100%;
-      float: left;
-      .form-group {
-        width: 90%;
-      }
+      flex-grow: 1;
     }
-
-    // .form-group {
-    // width: 85%;
-    // max-width: auto;
-    // }
 
     @include phone {
-      grid-template-columns: 1fr;
-      width: 100%;
-      min-width: 320px;
-      max-width: 100%;
+      flex-direction: column;
     }
-
-    grid-gap: 2em;
   }
 
   .info {
+    flex-grow: 1;
     display: grid;
     padding: 5px;
     grid-auto-rows: min-content;

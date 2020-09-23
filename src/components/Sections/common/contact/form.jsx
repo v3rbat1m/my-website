@@ -1,43 +1,33 @@
 import React from "react";
-import { Form, Button } from "react-bootstrap";
+import { Col, Form, Button } from "react-bootstrap";
+import { useMediaQuery } from "react-responsive";
 
 const MyForm = () => {
   return (
-    <div className="form">
-      <Form>
-        <Form.Group controlId="Name">
-          <Form.Label className="section-item-header">Name</Form.Label>
-          <Form.Control
-            size="xs"
-            placeholder="Enter your or company name"
-            disabled
-          />
-        </Form.Group>
+    <Form>
+      <Form.Group controlId="Name">
+        <Form.Label className="section-item-header">Name</Form.Label>
+        <Form.Control placeholder="Enter your or company name" />
+      </Form.Group>
 
-        <Form.Group controlId="formGroupEmail">
-          <Form.Label className="section-item-header">Email address</Form.Label>
-          <Form.Control
-            size="xs"
-            type="email"
-            placeholder="Enter email"
-            disabled
-          />
-        </Form.Group>
-        <Form.Group controlId="exampleForm.ControlTextarea1">
-          <Form.Label className="section-item-header">Message</Form.Label>
-          <Form.Control size="xs" as="textarea" rows="5" disabled />
-        </Form.Group>
-        <Button
-          variant="dark"
-          type="submit"
-          onClick={() => {
-            alert("Sorry, not implemented yet.");
-          }}
-        >
-          Submit
-        </Button>
-      </Form>
-    </div>
+      <Form.Group controlId="formGroupEmail">
+        <Form.Label className="section-item-header">Email address</Form.Label>
+        <Form.Control type="email" placeholder="Enter email" disabled />
+      </Form.Group>
+      <Form.Group controlId="exampleForm.ControlTextarea1">
+        <Form.Label className="section-item-header">Message</Form.Label>
+        <Form.Control as="textarea" rows="5" disabled />
+      </Form.Group>
+      <Button
+        variant="dark"
+        type="submit"
+        onClick={() => {
+          alert(`Sorry, not implemented yet!`);
+        }}
+      >
+        Submit
+      </Button>
+    </Form>
   );
 };
 

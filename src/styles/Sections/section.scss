@@ -1,8 +1,6 @@
-@import '../variables.scss';
+@import "../variables.scss";
 
 .section {
-  width: 100%;
-
   background-color: $sectionColor;
 
   h2 {
@@ -19,19 +17,17 @@
   background-color: $darkSectionColor;
 }
 
-
 .section-home {
-    background: url('../../photos/background.jpg') no-repeat center center fixed;
-    height: 100vh;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    
+  background: url("../../photos/background.jpg") no-repeat center center fixed;
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .section-item-header {
   font-family: "Lucida Console", Courier, monospace;
   font-size: 26px;
-  font-weight: bolder
+  font-weight: bolder;
 }
