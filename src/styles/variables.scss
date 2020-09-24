@@ -4,9 +4,9 @@ $sectionColor: black;
 $darkSectionColor: white;
 
 $phone-width: 200px;
-
 // $tablet-width: 768px;
 $desktop-width: 1024px;
+$padd: 2%;
 
 @mixin phone {
   @media (max-width: #{$desktop-width - 1px}) {

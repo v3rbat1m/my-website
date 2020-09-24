@@ -1,4 +1,5 @@
 import React from "react";
+import { isMobile } from "react-device-detect";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolleyballBall } from "@fortawesome/free-solid-svg-icons";
 import { faChess } from "@fortawesome/free-solid-svg-icons";
@@ -15,14 +16,21 @@ const Interests = () => {
     { label: "Video games", icon: faGamepad },
   ];
 
+  console.log(isMobile);
+
   return (
     <div>
       <h3 className="section-item-header">My interests</h3>
       <div className="icons">
         {icons.map((item) => (
-          <div style={{display: 'flex'}}>
-            <h5>{item.label}</h5>
-            <FontAwesomeIcon icon={item.icon} size="2x" style={{marginLeft: '0.5em'}} />
+          <div className="icon-label">
+            {!isMobile && item.label}
+            {isMobile}
+            <FontAwesomeIcon
+              icon={item.icon}
+              size="2x"
+              style={{ marginLeft: "0.5em" }}
+            />
           </div>
         ))}
       </div>

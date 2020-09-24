@@ -6,8 +6,9 @@
 @import "./Sections/home.scss";
 @import "./Sections/about.scss";
 @import "./Sections/skills.scss";
-@import "./Sections/experience-education.scss";
 @import "./Sections/contact.scss";
+
+@import "../styles/bubble.scss";
 
 .App {
   overflow-x: hidden;
@@ -15,5 +16,71 @@
   .all-sections {
     display: flex;
     flex-direction: column;
+  }
+
+  .section-home {
+    border: 20px solid blue;
+  }
+
+  .home {
+    border: 2px solid yellow;
+    display: flex;
+    align-items: flex-end;
+
+    h1 {
+      font-size: 3vw;
+      text-align: left;
+    }
+    color: white;
+    padding: 50px;
+    font-size: 2vw;
+    height: 100%;
+    width: 100%;
+  }
+
+  .experience {
+    border: 20px solid blue;
+
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: linear-gradient($sectionColor, $sectionColor) no-repeat 50%
+          50px/3px 90%,
+        $darkSectionColor;
+
+      .section-header {
+        grid-column: 1/3;
+      }
+    }
+
+    @include bubble("");
+  }
+
+  .education {
+    border: 20px solid blue;
+
+    display: flex;
+    flex-direction: column;
+
+    .section-header {
+      color: white;
+    }
+
+    @include desktop {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: linear-gradient($darkSectionColor, $darkSectionColor)
+          no-repeat 50% 50px/3px 90%,
+        $sectionColor;
+
+      .section-header {
+        grid-column: 1/3;
+      }
+    }
+
+    @include bubble("dark");
   }
 }

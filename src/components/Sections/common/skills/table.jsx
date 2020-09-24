@@ -3,7 +3,7 @@ import { Table } from "react-bootstrap";
 
 const MyTable = ({ skills }) => {
   return (
-    <Table bordered responsive='md' className='my-table'>
+    <Table bordered responsive="xs" className="my-table">
       <thead>
         <tr>
           <th>Name</th>
@@ -11,12 +11,12 @@ const MyTable = ({ skills }) => {
           <th>Type</th>
         </tr>
       </thead>
-      <tbody className='table-body'>
+      <tbody className="table-body">
         {skills.map((skill) => (
           <tr key={skill.name}>
-            <td className='table-name'>{skill.name}</td>
-            <td className='table-level'>{skill.level}</td>
-            <td className='table-type'>{skill.type}</td>
+            <td className="table-name">{skill.name}</td>
+            <td className="table-level">{skill.level}</td>
+            <td className="table-type">{skill.type}</td>
           </tr>
         ))}
       </tbody>

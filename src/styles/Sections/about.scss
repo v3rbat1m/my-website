@@ -3,16 +3,24 @@
 .about {
   .about-content {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include phone {
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
 
     .cv,
     .basic-info,
     .interests {
       flex-grow: 1;
-      max-width: 50%;
-      
+      width: 50%;
+      padding: $padd;
+
       @include phone {
-        min-width: 100%;
+        width: auto;
       }
     }
 
@@ -22,25 +30,29 @@
 
     .cv {
       .cv-content {
-        height: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 1em;
-
-        p {
-          grid-column-start: 1;
-          grid-column-end: 3;
+        display: flex;
+        flex-flow: column wrap;
+        .buttons {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          .btn {
+            flex-grow: 1;
+          }
+          .btn-left {
+            margin-right: 0.5rem;
+          }
+          .btn-right {
+            margin-left: 0.5rem;
+          }
         }
-      }
-
-      .btn {
-        align-self: end;
       }
     }
 
     .interests {
       .icons {
         display: flex;
+        flex-flow: row wrap;
         justify-content: space-between;
       }
     }

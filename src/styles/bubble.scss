@@ -1,4 +1,4 @@
-@import '../variables.scss';
+@import "../styles/variables.scss";
 
 @mixin speech-bubble-before($side, $theme) {
   $color: white;
@@ -39,16 +39,6 @@
     $backgroundColor: white;
   }
 
-  @if $side == "left" {
-    margin-right: 16px;
-    grid-column: 1/2;
-    margin-bottom: 40px;
-  } @else {
-    grid-column: 2/3;
-    margin-left: 16px;
-    margin-top: 40px;
-  }
-
   background-color: $backgroundColor;
   color: $color;
 
@@ -58,6 +48,23 @@
   font-family: arial;
   position: relative;
   align-self: start;
+  margin-top: 1%;
+  border-radius: 5px;
+
+  @include desktop {
+    border-radius: 0px;
+    margin-top: 0%;
+
+    @if $side == "left" {
+      margin-right: 16px;
+      grid-column: 1/2;
+      margin-bottom: 40px;
+    } @else {
+      grid-column: 2/3;
+      margin-left: 16px;
+      margin-top: 40px;
+    }
+  }
 }
 
 @mixin bubble($theme) {
@@ -69,43 +76,13 @@
     @include speech-bubble("right", $theme);
   }
 
-  .speech-bubble-right:before {
-    @include speech-bubble-before("right", $theme);
+  @include desktop {
+    .speech-bubble-right:before {
+      @include speech-bubble-before("right", $theme);
+    }
+
+    .speech-bubble-left:before {
+      @include speech-bubble-before("left", $theme);
+    }
   }
-
-  .speech-bubble-left:before {
-    @include speech-bubble-before("left", $theme);
-  }
-}
-
-.experience,
-.education {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  .section-header {
-    grid-column: 1/3;
-  }
-}
-
-.experience {
-  @include bubble("");
-}
-
-.education {
-  @include bubble("dark");
-
-  .section-header {
-    color: white;
-  }
-}
-
-.section-experience {
-  background: linear-gradient($sectionColor, $sectionColor) no-repeat 50% 50px/3px 90%,
-    $darkSectionColor;
-}
-
-.section-education {
-  background: linear-gradient($darkSectionColor, $darkSectionColor) no-repeat 50% 50px/3px 90%,
-    $sectionColor;
 }
